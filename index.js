@@ -244,12 +244,12 @@ for (const typeName in NATIVE) {
   typeforce[typeName] = NATIVE[typeName]
 }
 
-for (typeName in TYPES) {
+for (const typeName in TYPES) {
   typeforce[typeName] = TYPES[typeName]
 }
 
 const EXTRA = require('./extra')
-for (typeName in EXTRA) {
+for (const typeName in EXTRA) {
   typeforce[typeName] = EXTRA[typeName]
 }
 
