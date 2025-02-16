@@ -1,7 +1,7 @@
 const native = require('./native')
 
 function getTypeName (fn) {
-  return fn.name || fn.toString().match(/function (.*?)\s*\(/)[1]
+  return fn.toString().match(/function (.*?)\s*(\$\w+)?\s*\(/)[1];
 }
 
 function getValueTypeName (value) {
